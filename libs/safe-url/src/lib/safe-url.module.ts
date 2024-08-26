@@ -1,7 +1,7 @@
 import { Module, DynamicModule } from '@nestjs/common';
 import { SafeUrlService } from './safe-url.service';
 import { GoogleSafeBrowsingChecker } from './checkers/google-safe-browsing.checker';
-import { AppConfigService } from '@reduced.to/config';
+import { AppConfigService } from '@nstrct.me/config';
 
 @Module({})
 export class SafeUrlModule {

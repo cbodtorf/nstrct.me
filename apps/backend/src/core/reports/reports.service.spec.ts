@@ -1,13 +1,13 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { PrismaService } from '@reduced.to/prisma';
+import { PrismaService } from '@nstrct.me/prisma';
 import { SortOrder } from '../../shared/enums/sort-order.enum';
 import { IFindAllOptions } from '../entity.service';
 import { ReportsService } from './reports.service';
-import { AppConfigService } from '@reduced.to/config';
+import { AppConfigService } from '@nstrct.me/config';
 
 const MOCK_CONFIG = {
   front: {
-    domain: 'reduced.to',
+    domain: 'nstrct.me',
   },
 };
 
@@ -126,27 +126,27 @@ describe('ReportsService', () => {
 
   describe('isUrlReportable', () => {
     const TEST_CASES = [
-      ['https://reduced.to/123', true],
-      ['https://reduced.to/some_cool_key', true],
-      ['https://reduced.to/abcass', true],
-      ['https://reduced.to/orig', true],
-      ['http://reduced.to/123', true],
-      ['http://reduced.to/orig', true],
-      ['http://reduced.to/some_cool_key', true],
-      ['https://not_reduced.to/123', false],
-      ['http://not_reduced.to/some_cool_key', false],
-      ['https://not_reduced.to/some_cool_key', false],
-      ['https://reduced.to/sfafaf/', false],
-      ['reduced.to/123', false],
+      ['https://nstrct.me/123', true],
+      ['https://nstrct.me/some_cool_key', true],
+      ['https://nstrct.me/abcass', true],
+      ['https://nstrct.me/orig', true],
+      ['http://nstrct.me/123', true],
+      ['http://nstrct.me/orig', true],
+      ['http://nstrct.me/some_cool_key', true],
+      ['https://not_nstrct.me/123', false],
+      ['http://not_nstrct.me/some_cool_key', false],
+      ['https://not_nstrct.me/some_cool_key', false],
+      ['https://nstrct.me/sfafaf/', false],
+      ['nstrct.me/123', false],
       ['google.com', false],
       ['https://google.com', false],
-      ['https://reduced.to/123/456', false],
-      ['https://reduced.to/123/456/789', false],
+      ['https://nstrct.me/123/456', false],
+      ['https://nstrct.me/123/456/789', false],
       ['https://test.com', false],
-      ['https://reduced.to', false],
-      ['https://reduced.to/', false],
-      ['https://reduced.to/123/456/789/1011', false],
-      ['https://reduced.to/123///', false],
+      ['https://nstrct.me', false],
+      ['https://nstrct.me/', false],
+      ['https://nstrct.me/123/456/789/1011', false],
+      ['https://nstrct.me/123///', false],
     ];
 
     it.each(TEST_CASES)('should return false if url "%s" is not reportable', (url: string, expectedResult: boolean) => {

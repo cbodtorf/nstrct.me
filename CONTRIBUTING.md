@@ -1,4 +1,4 @@
-# Contributing to reduced.to 👋👋👋
+# Contributing to nstrct.me 👋👋👋
 
 Want to contribute to this project? We ❤️ it!
 

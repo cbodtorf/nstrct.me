@@ -1,5 +1,5 @@
 import { component$, useSignal, $ } from '@builder.io/qwik';
-import { getPlanByPaddleId, PLAN_LEVELS, Plan, FEATURES, FeatureKey } from '@reduced.to/subscription-manager';
+import { getPlanByPaddleId, PLAN_LEVELS, Plan, FEATURES, FeatureKey } from '@nstrct.me/subscription-manager';
 import { Form } from '@builder.io/qwik-city';
 import { useGetCurrentUser } from '../../../routes/layout';
 import { CheckoutEventNames, Paddle } from '@paddle/paddle-js';
@@ -91,7 +91,7 @@ export const PlanModal = component$(({ id, paddle }: PlanModalProps) => {
           <div class="bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-900 shadow-sm">
             <div class="pt-5 px-8">
               <div class="flex justify-center items-center mb-2 gap-2">
-                <img src="/favicon.png" alt="Reduced.to logo" class="w-14 h-14" />
+                <img src="/favicon.png" alt="Nstrct.me logo" class="w-14 h-14" />
               </div>
               <h1 class="text-2xl font-semibold text-center dark:text-gray-300">Discover the Perfect Plan</h1>
               <p class="text-center text-gray-500 mb-4">Choose the best plan that fits your needs and upgrade for more features.</p>

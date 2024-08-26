@@ -14,7 +14,7 @@ export const Navbar = component$(() => {
     <div class="navbar bg-base-100 drop-shadow-md dark:shadow-slate-700 shadow-sm fixed z-[40] lg:px-20">
       <div class="flex-1 flex items-center">
         <a href="/" class="btn btn-ghost normal-case text-xl">
-          Reduced.to
+          Nstrct.me
         </a>
         <div class="hidden sm:flex flex-grow justify-start space-x-4 ml-6">
           <a title="Features" href="/features" class="btn btn-sm btn-ghost">
@@ -23,7 +23,7 @@ export const Navbar = component$(() => {
           <a title="Pricing" href="/pricing" class="btn btn-sm btn-ghost">
             Pricing
           </a>
-          <a href="https://docs.reduced.to" target="_blank" title="Documentation" class="btn btn-sm btn-ghost">
+          <a href="https://docs.nstrct.me" target="_blank" title="Documentation" class="btn btn-sm btn-ghost">
             Docs
           </a>
         </div>
@@ -53,7 +53,7 @@ export const Navbar = component$(() => {
               </Link>
             </li>
             <li>
-              <a href="https://docs.reduced.to" target="_blank" title="Documentation" class="btn-ghost">
+              <a href="https://docs.nstrct.me" target="_blank" title="Documentation" class="btn-ghost">
                 Docs
               </a>
             </li>

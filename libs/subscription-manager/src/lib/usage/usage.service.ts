@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { PrismaService } from '@reduced.to/prisma';
+import { PrismaService } from '@nstrct.me/prisma';
 import { PLAN_LEVELS } from '../limits';
 
 @Injectable()

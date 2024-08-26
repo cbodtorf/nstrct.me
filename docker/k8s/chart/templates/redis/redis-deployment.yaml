@@ -24,6 +24,6 @@ spec:
             - name: REDIS_PASSWORD
               valueFrom:
                 configMapKeyRef:
-                  name: reduced-configmap
+                  name: nstrct-configmap
                   key: REDIS_PASSWORD
           command: ['sh', '-c', 'redis-server --requirepass $REDIS_PASSWORD']

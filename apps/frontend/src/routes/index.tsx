@@ -21,16 +21,16 @@ export default component$(() => {
   );
 });
 export const head: DocumentHead = {
-  title: 'Reduced.to - Free & Open-Source URL Shortener',
+  title: 'Nstrct.me - Free & Open-Source URL Shortener',
   meta: [
     {
       name: 'title',
-      content: 'Simplify Your Links with Reduced.to | Free & Open-Source URL Shortener',
+      content: 'Simplify Your Links with Nstrct.me | Free & Open-Source URL Shortener',
     },
     {
       name: 'description',
       content:
-        'Transform cumbersome URLs into neat, manageable links with Reduced.to, the free and open-source URL shortener. Perfect for enhancing link sharing and tracking!',
+        'Transform cumbersome URLs into neat, manageable links with Nstrct.me, the free and open-source URL shortener. Perfect for enhancing link sharing and tracking!',
     },
     {
       property: 'og:type',
@@ -38,20 +38,20 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:url',
-      content: 'https://reduced.to',
+      content: 'https://nstrct.me',
     },
     {
       property: 'og:title',
-      content: 'Simplify Your Links | Reduced.to - Free Open-Source URL Shortener',
+      content: 'Simplify Your Links | Nstrct.me - Free Open-Source URL Shortener',
     },
     {
       property: 'og:description',
       content:
-        'Discover the ease of managing and tracking your links with Reduced.to, the ultimate free and open-source URL shortener. Start creating clean, concise URLs today!',
+        'Discover the ease of managing and tracking your links with Nstrct.me, the ultimate free and open-source URL shortener. Start creating clean, concise URLs today!',
     },
     {
       property: 'og:image',
-      content: 'https://reduced.to/images/thumbnail.png',
+      content: 'https://nstrct.me/images/thumbnail.png',
     },
     {
       property: 'twitter:card',
@@ -59,20 +59,20 @@ export const head: DocumentHead = {
     },
     {
       property: 'twitter:url',
-      content: 'https://reduced.to',
+      content: 'https://nstrct.me',
     },
     {
       property: 'twitter:title',
-      content: 'Simplify Your Links with Reduced.to | Free & Open-Source',
+      content: 'Simplify Your Links with Nstrct.me | Free & Open-Source',
     },
     {
       property: 'twitter:description',
       content:
-        'Transform cumbersome URLs into neat, manageable links with Reduced.to, the free and open-source URL shortener. Perfect for enhancing link sharing and tracking!',
+        'Transform cumbersome URLs into neat, manageable links with Nstrct.me, the free and open-source URL shortener. Perfect for enhancing link sharing and tracking!',
     },
     {
       property: 'twitter:image',
-      content: 'https://reduced.to/images/thumbnail.png',
+      content: 'https://nstrct.me/images/thumbnail.png',
     },
   ],
 };

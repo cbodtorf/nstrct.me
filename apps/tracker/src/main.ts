@@ -1,9 +1,9 @@
 import { VersioningType } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
-import { AppConfigService } from '@reduced.to/config';
+import { AppConfigService } from '@nstrct.me/config';
 import { AppModule } from './app/app.module';
-import { AppLoggerService } from '@reduced.to/logger';
+import { AppLoggerService } from '@nstrct.me/logger';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);

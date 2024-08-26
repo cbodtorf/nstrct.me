@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
 import { ShortenerController } from './shortener.controller';
 import { ShortenerService } from './shortener.service';
-import { PrismaModule } from '@reduced.to/prisma';
+import { PrismaModule } from '@nstrct.me/prisma';
 import { ShortenerProducer } from './producer/shortener.producer';
-import { QueueManagerModule, QueueManagerService } from '@reduced.to/queue-manager';
-import { SafeUrlModule } from '@reduced.to/safe-url';
-import { UsageModule } from '@reduced.to/subscription-manager';
+import { QueueManagerModule, QueueManagerService } from '@nstrct.me/queue-manager';
+import { SafeUrlModule } from '@nstrct.me/safe-url';
+import { UsageModule } from '@nstrct.me/subscription-manager';
 @Module({
   imports: [PrismaModule, QueueManagerModule, SafeUrlModule.forRootAsync(), UsageModule],
   controllers: [ShortenerController],

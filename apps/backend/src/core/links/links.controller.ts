@@ -4,7 +4,7 @@ import { RolesGuard } from '../../auth/guards/roles.guard';
 import { LinksService } from './links.service';
 import { IPaginationResult, calculateSkip } from '../../shared/utils';
 import { FindAllQueryDto } from './dto';
-import { Role, Link } from '@reduced.to/prisma';
+import { Role, Link } from '@nstrct.me/prisma';
 import { Roles, UserCtx } from '../../shared/decorators';
 import { Request } from 'express';
 import { UserContext } from '../../auth/interfaces/user-context';

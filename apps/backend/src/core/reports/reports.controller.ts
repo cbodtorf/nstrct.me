@@ -1,7 +1,7 @@
 import { BadRequestException, Body, Controller, Delete, Get, NotFoundException, Param, Post, Query, UseGuards } from '@nestjs/common';
 import { RolesGuard } from '../../auth/guards/roles.guard';
 import { IPaginationResult, calculateSkip } from '../../shared/utils';
-import { Link, Report, Role } from '@reduced.to/prisma';
+import { Link, Report, Role } from '@nstrct.me/prisma';
 import { Roles } from '../../shared/decorators';
 import { ReportsService } from './reports.service';
 import { FindAllQueryDto, CreateReportDto } from './dto';

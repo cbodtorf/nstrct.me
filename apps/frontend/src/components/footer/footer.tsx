@@ -11,7 +11,7 @@ export const Footer = component$(() => {
             href="/"
             aria-label="Brand"
           >
-            Reduced.to
+            Nstrct.me
           </Link>
         </div>
 
@@ -47,7 +47,7 @@ export const Footer = component$(() => {
         <div class="md:text-end space-x-2">
           <a
             class="w-8 h-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-            href="https://reduced.to/git"
+            href="https://nstrct.me/git"
           >
             <svg
               class="flex-shrink-0 w-3.5 h-3.5"
@@ -62,7 +62,7 @@ export const Footer = component$(() => {
           </a>
           <a
             class="w-8 h-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-            href="https://reduced.to/discord"
+            href="https://nstrct.me/discord"
           >
             <svg
               class="flex-shrink-0 w-3.5 h-3.5"

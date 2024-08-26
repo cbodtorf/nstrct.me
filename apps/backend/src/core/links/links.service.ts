@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { EntityService } from '../entity.service';
-import { Link, Prisma, PrismaService } from '@reduced.to/prisma';
+import { Link, Prisma, PrismaService } from '@nstrct.me/prisma';
 
 @Injectable()
 export class LinksService extends EntityService<Link> {

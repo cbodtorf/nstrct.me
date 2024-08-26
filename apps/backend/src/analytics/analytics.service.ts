@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { AppLoggerService } from '@reduced.to/logger';
-import { PrismaService } from '@reduced.to/prisma';
+import { AppLoggerService } from '@nstrct.me/logger';
+import { PrismaService } from '@nstrct.me/prisma';
 import { sub } from 'date-fns';
 
 @Injectable()

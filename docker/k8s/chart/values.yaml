@@ -1,6 +1,6 @@
 # values.yaml
 
-namespace: reduced-to # Namespace for the application
+namespace: nstrct-me # Namespace for the application
 backend_port: &backend_port 3000 # Port for backend application
 frontend_port: &frontend_port 5000 # Port for frontend application
 tracker_port: &tracker_port 3001 # Port for tracker application
@@ -21,17 +21,17 @@ default_resources:
 
 backend:
   replicas: 1
-  image: 'ghcr.io/origranot/reduced.to/backend:master'
+  image: 'ghcr.io/cbodtorf/nstrct.me/backend:master'
   port: *backend_port
 
 frontend:
   replicas: 1
-  image: 'ghcr.io/origranot/reduced.to/frontend:master'
+  image: 'ghcr.io/cbodtorf/nstrct.me/frontend:master'
   port: *frontend_port
 
 tracker:
   replicas: 1
-  image: 'ghcr.io/origranot/reduced.to/tracker:master'
+  image: 'ghcr.io/cbodtorf/nstrct.me/tracker:master'
   port: *tracker_port
 
 shared_configmap:
@@ -54,17 +54,17 @@ shared_configmap:
   LOGGER_CONSOLE_THRESHOLD: 'INFO' # Log level for console output (DEBUG, INFO, WARN, ERROR, FATAL)
 
   # Frontend settings
-  DOMAIN: 'reduced.to' # Domain for the frontend application
+  DOMAIN: 'nstrct.me' # Domain for the frontend application
   PUBLIC_PADDLE_KEY: 'test_public_key' # Public key for Paddle integration
-  CLIENTSIDE_API_DOMAIN: 'https://reduced.to' # Client-side API domain
+  CLIENTSIDE_API_DOMAIN: 'https://nstrct.me' # Client-side API domain
   STORAGE_DOMAIN: 'Get it from https://cloud.digitalocean.com/spaces' # Storage domain
 
   # Database settings
   POSTGRES_PORT: *postgres_port # Port for PostgreSQL database
-  POSTGRES_DB: 'reduced_to_db' # PostgreSQL database name
+  POSTGRES_DB: 'nstrct_me_db' # PostgreSQL database name
   POSTGRES_USER: 'postgres' # PostgreSQL username
   POSTGRES_PASSWORD: 'postgres' # PostgreSQL password
-  DATABASE_URL: 'postgresql://postgres:postgres@postgres-service:5432/reduced_to_db' # Database connection URL
+  DATABASE_URL: 'postgresql://postgres:postgres@postgres-service:5432/nstrct_me_db' # Database connection URL
 
   # Redis settings
   REDIS_ENABLE: 'false' # Enable/disable Redis integration

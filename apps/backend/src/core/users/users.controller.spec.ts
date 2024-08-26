@@ -3,15 +3,15 @@ import { INestApplication, ValidationPipe } from '@nestjs/common';
 import request from 'supertest';
 import { UsersController } from './users.controller';
 import { UsersService } from './users.service';
-import { User } from '@reduced.to/prisma';
+import { User } from '@nstrct.me/prisma';
 import { IPaginationResult } from '../../shared/utils';
-import { AppConfigModule } from '@reduced.to/config';
+import { AppConfigModule } from '@nstrct.me/config';
 import { JwtAuthGuard } from '../../auth/guards/jwt.guard';
 import { RolesGuard } from '../../auth/guards/roles.guard';
 import { IFindAllOptions } from '../entity.service';
 import { SortOrder } from '../../shared/enums/sort-order.enum';
 import { StorageService } from '../../storage/storage.service';
-import { AppLoggerModule } from '@reduced.to/logger';
+import { AppLoggerModule } from '@nstrct.me/logger';
 import { AuthService } from '../../auth/auth.service';
 
 describe('UsersController', () => {

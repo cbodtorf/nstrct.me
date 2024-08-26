@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
   return {
     resolve: {
       alias: {
-        '@reduced.to/subscription-manager': path.resolve(__dirname, '../../libs/subscription-manager/src/static'),
+        '@nstrct.me/subscription-manager': path.resolve(__dirname, '../../libs/subscription-manager/src/static'),
       },
     },
     cacheDir: '../../node_modules/.vite/apps/frontend',

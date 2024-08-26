@@ -3,7 +3,7 @@ import { AnalyticsService } from './analytics.service';
 import { UserCtx } from '../shared/decorators';
 import { JwtAuthGuard } from '../auth/guards/jwt.guard';
 import { UserContext } from '../auth/interfaces/user-context';
-import { PrismaService } from '@reduced.to/prisma';
+import { PrismaService } from '@nstrct.me/prisma';
 import { RestrictDays } from './analytics.guard';
 
 @UseGuards(JwtAuthGuard, RestrictDays)

@@ -13,7 +13,7 @@ export const Hero = component$(() => {
         <div class="flex justify-center">
           <a
             class="inline-flex items-center gap-x-2 bg-white z-10 border border-gray-600 text-xs text-gray-600 p-2 px-3 rounded-full hover:border-gray-900 dark:bg-slate-900 dark:border-neutral-700 dark:hover:border-neutral-600 dark:text-slate-200"
-            href="https://reduced.to/git"
+            href="https://nstrct.me/git"
             target="_blank"
           >
             Don't forget to star us on GitHub!
@@ -57,7 +57,7 @@ export const Hero = component$(() => {
           </Link>
           <a
             type="button"
-            href="https://github.com/origranot/reduced.to#-docker"
+            href="https://github.com/cbodtorf/nstrct.me#-docker"
             target="_blank"
             class="flex justify-center items-center gap-x-2 p-2 ps-3 text-sm font-mono rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 sm:w-auto w-2/3 h-10"
           >
@@ -69,7 +69,7 @@ export const Hero = component$(() => {
         <div class="mt-5 flex justify-center items-center gap-x-1 sm:gap-x-3">
           <a
             class="inline-flex items-center gap-x-1.5 text-sm text-blue-600 decoration-2 hover:underline font-medium"
-            href="https://docs.reduced.to"
+            href="https://docs.nstrct.me"
             rel="canonical"
             target="_blank"
           >

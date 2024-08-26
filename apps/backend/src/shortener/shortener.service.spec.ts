@@ -1,14 +1,14 @@
-import { AppConfigService } from '@reduced.to/config';
+import { AppConfigService } from '@nstrct.me/config';
 import { ShortenerService } from './shortener.service';
 import { Test, TestingModule } from '@nestjs/testing';
 import { AppCacheModule } from '../cache/cache.module';
 import { AppCacheService } from '../cache/cache.service';
-import { AppConfigModule } from '@reduced.to/config';
-import { PrismaService } from '@reduced.to/prisma';
+import { AppConfigModule } from '@nstrct.me/config';
+import { PrismaService } from '@nstrct.me/prisma';
 import { ShortenerDto } from './dto';
 import { BadRequestException } from '@nestjs/common';
 import { UserContext } from '../auth/interfaces/user-context';
-import { UsageService } from '@reduced.to/subscription-manager';
+import { UsageService } from '@nstrct.me/subscription-manager';
 
 const FIXED_SYSTEM_TIME = '1999-01-01T00:00:00Z';
 
@@ -21,7 +21,7 @@ describe('ShortenerService', () => {
   let createLinkPrismaSpy: jest.SpyInstance;
   let setRedisKeySpy: jest.SpyInstance;
 
-  const ORIGINAL_URL = 'https://github.com/origranot/reduced.to';
+  const ORIGINAL_URL = 'https://github.com/cbodtorf/nstrct.me';
   const USER_ID = '26419f47-97bd-4f28-ba2d-a33c224fa4af';
   const KEY = 'best_url_shortener';
   const LINK_DB_DATA = {
@@ -170,7 +170,7 @@ describe('ShortenerService', () => {
       const result = await service.getLinkFromDb('good_url');
       expect(addLinkToCache).toBeCalledTimes(1);
       expect(addLinkToCache).toBeCalledWith('good_url', { url: ORIGINAL_URL, key: 'good_url' }, undefined);
-      expect(result).toStrictEqual({ url: 'https://github.com/origranot/reduced.to' });
+      expect(result).toStrictEqual({ url: 'https://github.com/cbodtorf/nstrct.me' });
     });
 
     it('should return null if link not found', async () => {

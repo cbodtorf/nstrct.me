@@ -1,8 +1,8 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { ProducerService } from './producer.service';
-import { AppConfigModule, AppConfigService } from '@reduced.to/config';
+import { AppConfigModule, AppConfigService } from '@nstrct.me/config';
 import { Injectable } from '@nestjs/common';
-import { AppLoggerModule } from '@reduced.to/logger';
+import { AppLoggerModule } from '@nstrct.me/logger';
 import { QueueManagerService } from '../queue-manager.service';
 import { QueueManagerModule } from '../queue-manager.module';
 

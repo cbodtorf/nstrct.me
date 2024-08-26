@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { EntityService } from '../entity.service';
-import { Prisma, PrismaService, Report } from '@reduced.to/prisma';
-import { AppConfigService } from '@reduced.to/config';
+import { Prisma, PrismaService, Report } from '@nstrct.me/prisma';
+import { AppConfigService } from '@nstrct.me/config';
 
 @Injectable()
 export class ReportsService extends EntityService<Report> {

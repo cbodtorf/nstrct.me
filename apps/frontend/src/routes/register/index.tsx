@@ -280,15 +280,15 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Reduced.to | Register',
+  title: 'Nstrct.me | Register',
   meta: [
     {
       name: 'title',
-      content: 'Reduced.to | Register',
+      content: 'Nstrct.me | Register',
     },
     {
       name: 'description',
-      content: 'Reduced.to | Create your Reduced.to account to manage your shorten links.',
+      content: 'Nstrct.me | Create your Nstrct.me account to manage your shorten links.',
     },
     {
       property: 'og:type',
@@ -296,15 +296,15 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:url',
-      content: 'https://reduced.to/register',
+      content: 'https://nstrct.me/register',
     },
     {
       property: 'og:title',
-      content: 'Reduced.to | Register',
+      content: 'Nstrct.me | Register',
     },
     {
       property: 'og:description',
-      content: 'Reduced.to | Create your Reduced.to account to manage your shorten links.',
+      content: 'Nstrct.me | Create your Nstrct.me account to manage your shorten links.',
     },
     {
       property: 'twitter:card',
@@ -312,11 +312,11 @@ export const head: DocumentHead = {
     },
     {
       property: 'twitter:title',
-      content: 'Reduced.to | Register',
+      content: 'Nstrct.me | Register',
     },
     {
       property: 'twitter:description',
-      content: 'Reduced.to | Create your Reduced.to account to manage your shorten links.',
+      content: 'Nstrct.me | Create your Nstrct.me account to manage your shorten links.',
     },
   ],
 };

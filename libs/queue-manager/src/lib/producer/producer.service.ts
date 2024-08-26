@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { QueueManagerService } from '../queue-manager.service';
-import { AppConfigService } from '@reduced.to/config';
-import { AppLoggerService } from '@reduced.to/logger';
+import { AppConfigService } from '@nstrct.me/config';
+import { AppLoggerService } from '@nstrct.me/logger';
 import { Producer } from 'kafkajs';
 
 @Injectable()

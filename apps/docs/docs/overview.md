@@ -4,9 +4,9 @@ description: Overview of the project
 hide_table_of_contents: true
 ---
 
-### What is Reduced.to?
+### What is nstrct.me?
 
-Reduced.to is a modern web application designed to shorten link URLs, making them easier to remember, share, and track. The project is developed using cutting-edge technologies and services, including NestJS, Redis, Novu, PostgreSQL, and Qwik.
+Nstrct.me is a modern web application designed to shorten link URLs, making them easier to remember, share, and track. The project is developed using cutting-edge technologies and services, including NestJS, Redis, Novu, PostgreSQL, and Qwik.
 
 ### How does it work?
 
@@ -22,7 +22,7 @@ For data storage, we utilize PostgreSQL, a reliable and robust open-source relat
 
 The frontend of the project is developed using Qwik, a cutting-edge framework known for its enhanced performance and scalability. By leveraging Qwik, we deliver a smooth and seamless user interface for an exceptional user experience.
 
-In summary, the reduced.to project is a comprehensive URL shortener that incorporates various technologies and services to ensure optimal performance, security, and user experience. With the integration of Redis, Novu, PostgreSQL, and Qwik, we provide a reliable, efficient, and user-friendly platform for generating shortened URLs.
+In summary, the nstrct.me project is a comprehensive URL shortener that incorporates various technologies and services to ensure optimal performance, security, and user experience. With the integration of Redis, Novu, PostgreSQL, and Qwik, we provide a reliable, efficient, and user-friendly platform for generating shortened URLs.
 
 ### Project Architecture Overview
 

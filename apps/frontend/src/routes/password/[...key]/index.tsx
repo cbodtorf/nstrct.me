@@ -64,8 +64,8 @@ export default component$(() => {
         <div class="w-full max-w-lg mx-auto p-6">
           <div class="mt-7 bg-white border border-gray-200 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700">
             <div class="bg-gray-100 border-b rounded-t-xl py-3 px-4 md:py-4 md:px-5 dark:bg-gray-900 dark:border-gray-700 flex justify-center items-center">
-              <img src="/favicon.png" alt="Reduced.to logo" class="w-10 h-10" />
-              <p class="ml-4 text-xl font-semibold text-gray-800 dark:text-white">Reduced.to</p>
+              <img src="/favicon.png" alt="Nstrct.me logo" class="w-10 h-10" />
+              <p class="ml-4 text-xl font-semibold text-gray-800 dark:text-white">Nstrct.me</p>
             </div>
             <div class="p-4 sm:p-5">
               <div class="text-center">
@@ -105,11 +105,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Password Protected URL | Reduced.to',
+  title: 'Password Protected URL | Nstrct.me',
   meta: [
     {
       name: 'title',
-      content: 'Reduced.to | Password Protected URL',
+      content: 'Nstrct.me | Password Protected URL',
     },
     {
       name: 'description',
@@ -121,11 +121,11 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:url',
-      content: 'https://reduced.to/password',
+      content: 'https://nstrct.me/password',
     },
     {
       property: 'og:title',
-      content: 'Reduced.to | Password Protected URL',
+      content: 'Nstrct.me | Password Protected URL',
     },
     {
       property: 'og:description',
@@ -137,7 +137,7 @@ export const head: DocumentHead = {
     },
     {
       property: 'twitter:title',
-      content: 'Reduced.to | Password Protected URL',
+      content: 'Nstrct.me | Password Protected URL',
     },
     {
       property: 'twitter:description',

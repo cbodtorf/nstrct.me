@@ -5,7 +5,7 @@ import { ClicksChart } from '../../../../components/dashboard/analytics/clicks-c
 import { CountriesChart } from '../../../../components/dashboard/analytics/contries-chart/countries-chart';
 import { DevicesChart } from '../../../../components/dashboard/analytics/devices-chart/devices-chart';
 import { useGetCurrentUser } from '../../../layout';
-import { PLAN_LEVELS } from '@reduced.to/subscription-manager';
+import { PLAN_LEVELS } from '@nstrct.me/subscription-manager';
 import { LuLock } from '@qwikest/icons/lucide';
 
 export const useGetAnalytics = routeLoader$(async ({ params: { key }, cookie, redirect }) => {
@@ -108,15 +108,15 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Reduced.to | Analytics',
+  title: 'Nstrct.me | Analytics',
   meta: [
     {
       name: 'title',
-      content: 'Reduced.to | Dashboard - Analytics',
+      content: 'Nstrct.me | Dashboard - Analytics',
     },
     {
       name: 'description',
-      content: 'Reduced.to | Analytics page. See live analytics of your links!',
+      content: 'Nstrct.me | Analytics page. See live analytics of your links!',
     },
     {
       property: 'og:type',
@@ -124,15 +124,15 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:url',
-      content: 'https://reduced.to/dashboard/analytics',
+      content: 'https://nstrct.me/dashboard/analytics',
     },
     {
       property: 'og:title',
-      content: 'Reduced.to | Dashboard - Analytics',
+      content: 'Nstrct.me | Dashboard - Analytics',
     },
     {
       property: 'og:description',
-      content: 'Reduced.to | Analytics page. See live analytics of your links!',
+      content: 'Nstrct.me | Analytics page. See live analytics of your links!',
     },
     {
       property: 'twitter:card',
@@ -140,11 +140,11 @@ export const head: DocumentHead = {
     },
     {
       property: 'twitter:title',
-      content: 'Reduced.to | Dashboard - Analytics',
+      content: 'Nstrct.me | Dashboard - Analytics',
     },
     {
       property: 'twitter:description',
-      content: 'Reduced.to | Analytics page. See live analytics of your links!',
+      content: 'Nstrct.me | Analytics page. See live analytics of your links!',
     },
   ],
 };

@@ -1,5 +1,5 @@
-import { Role } from '@reduced.to/prisma';
-import { PLAN_LEVELS } from '@reduced.to/subscription-manager';
+import { Role } from '@nstrct.me/prisma';
+import { PLAN_LEVELS } from '@nstrct.me/subscription-manager';
 
 export interface UserContext {
   id: string;

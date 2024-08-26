@@ -1,8 +1,8 @@
 import { BadRequestException, Controller, Get, Req, Res, UseGuards } from '@nestjs/common';
 import { Response } from 'express';
-import { AppConfigService } from '@reduced.to/config';
+import { AppConfigService } from '@nstrct.me/config';
 import { AuthService } from '../auth.service';
-import { ProviderType } from '@reduced.to/prisma';
+import { ProviderType } from '@nstrct.me/prisma';
 import { UsersService } from '../../core/users/users.service';
 import { setAuthCookies } from '../utils/cookies';
 import { GoogleOAuthGuard } from '../guards/google-oauth.guard';

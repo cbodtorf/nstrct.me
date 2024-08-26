@@ -1,14 +1,14 @@
 import { Injectable } from '@nestjs/common';
-import { ConsumerService } from '@reduced.to/queue-manager';
-import { AppConfigService } from '@reduced.to/config';
-import { AppLoggerService } from '@reduced.to/logger';
+import { ConsumerService } from '@nstrct.me/queue-manager';
+import { AppConfigService } from '@nstrct.me/config';
+import { AppLoggerService } from '@nstrct.me/logger';
 import { createHash } from 'node:crypto';
 import { KafkaMessage } from 'kafkajs';
 import { isbot } from 'isbot';
 import geoip from 'geoip-lite';
 import { VisitsService } from './visits.service';
-import { PrismaService } from '@reduced.to/prisma';
-import { UsageService } from '@reduced.to/subscription-manager';
+import { PrismaService } from '@nstrct.me/prisma';
+import { UsageService } from '@nstrct.me/subscription-manager';
 
 @Injectable()
 export class VisitsConsumer extends ConsumerService {

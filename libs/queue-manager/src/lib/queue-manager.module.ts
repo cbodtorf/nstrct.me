@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { AppConfigService } from '@reduced.to/config';
+import { AppConfigService } from '@nstrct.me/config';
 import { Kafka, logLevel } from 'kafkajs';
-import { AppLoggerService } from '@reduced.to/logger';
+import { AppLoggerService } from '@nstrct.me/logger';
 import { mockQueueManager } from './__mocks__/queue-manager.mock';
 
 export const QUEUE_MANAGER_INJECTION_TOKEN = 'QUEUE_MANAGER';

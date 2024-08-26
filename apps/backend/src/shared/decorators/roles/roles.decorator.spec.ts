@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { Reflector } from '@nestjs/core';
-import { Role } from '@reduced.to/prisma';
+import { Role } from '@nstrct.me/prisma';
 import { Roles, ROLES_KEY } from './roles.decorator';
 
 describe('Roles Decorator', () => {

@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { EntityService } from '../entity.service';
-import { Prisma, PrismaService, User } from '@reduced.to/prisma';
+import { Prisma, PrismaService, User } from '@nstrct.me/prisma';
 import { UserContext } from '../../auth/interfaces/user-context';
 
 @Injectable()

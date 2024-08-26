@@ -1,10 +1,10 @@
 import { Module, forwardRef } from '@nestjs/common';
 import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
-import { AppConfigService } from '@reduced.to/config';
+import { AppConfigService } from '@nstrct.me/config';
 import { NovuModule } from '../novu/novu.module';
 import { NovuService } from '../novu/novu.service';
-import { PrismaModule } from '@reduced.to/prisma';
+import { PrismaModule } from '@nstrct.me/prisma';
 import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
 import { JwtRefreshStrategy } from './strategies/jwt-refresh.strategy';

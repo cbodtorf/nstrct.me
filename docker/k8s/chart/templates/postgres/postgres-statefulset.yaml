@@ -18,7 +18,7 @@ spec:
           image: postgres:16.0
           envFrom:
             - configMapRef:
-                name: reduced-configmap
+                name: nstrct-configmap
           ports:
             - containerPort: {{ required "Postgres port has to be defined" .Values.postgres_port }}
           volumeMounts:

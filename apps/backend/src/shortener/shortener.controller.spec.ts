@@ -1,16 +1,16 @@
-import { AppConfigModule, AppConfigService } from '@reduced.to/config';
+import { AppConfigModule, AppConfigService } from '@nstrct.me/config';
 import { AppCacheModule } from '../cache/cache.module';
 import { ShortenerService } from './shortener.service';
 import { ShortenerController } from './shortener.controller';
 import { Test } from '@nestjs/testing';
 import { ShortenerDto } from './dto';
 import { Request } from 'express';
-import { AppLoggerModule } from '@reduced.to/logger';
+import { AppLoggerModule } from '@nstrct.me/logger';
 import { ShortenerProducer } from './producer/shortener.producer';
-import { QueueManagerModule, QueueManagerService } from '@reduced.to/queue-manager';
+import { QueueManagerModule, QueueManagerService } from '@nstrct.me/queue-manager';
 import { IClientDetails } from '../shared/decorators/client-details/client-details.decorator';
-import { SafeUrlService } from '@reduced.to/safe-url';
-import { UsageService } from '@reduced.to/subscription-manager';
+import { SafeUrlService } from '@nstrct.me/safe-url';
+import { UsageService } from '@nstrct.me/subscription-manager';
 
 describe('ShortenerController', () => {
   let shortenerController: ShortenerController;
@@ -65,7 +65,7 @@ describe('ShortenerController', () => {
       jest.spyOn(shortenerService, 'createUsersShortenedUrl').mockReturnValue(null);
       jest.spyOn(shortenerService, 'createShortenedUrl').mockResolvedValue({ key: 'url' });
 
-      const body: ShortenerDto = { url: 'https://github.com/origranot/reduced.to' };
+      const body: ShortenerDto = { url: 'https://github.com/cbodtorf/nstrct.me' };
       const req = { user: { verified: true } } as unknown as Request;
       const short = await shortenerController.shortener(body, req);
       expect(short).toBeNull();
@@ -75,7 +75,7 @@ describe('ShortenerController', () => {
       jest.spyOn(shortenerService, 'createUsersShortenedUrl').mockResolvedValue({ key: 'url.com' });
       jest.spyOn(shortenerService, 'createShortenedUrl').mockResolvedValue(null);
 
-      const body: ShortenerDto = { url: 'https://github.com/origranot/reduced.to' };
+      const body: ShortenerDto = { url: 'https://github.com/cbodtorf/nstrct.me' };
       const req = { user: { verified: true } } as unknown as Request;
       const short = await shortenerController.shortener(body, req);
       expect(short).toStrictEqual({ key: 'url.com' });
@@ -85,7 +85,7 @@ describe('ShortenerController', () => {
       jest.spyOn(shortenerService, 'createUsersShortenedUrl').mockResolvedValue({ key: 'url.com' });
       jest.spyOn(shortenerService, 'createShortenedUrl').mockResolvedValue(null);
 
-      const body: ShortenerDto = { url: 'https://github.com/origranot/reduced.to', temporary: true };
+      const body: ShortenerDto = { url: 'https://github.com/cbodtorf/nstrct.me', temporary: true };
       const req = {} as Request;
       const short = await shortenerController.shortener(body, req);
       expect(short).toBeNull();
@@ -95,7 +95,7 @@ describe('ShortenerController', () => {
       jest.spyOn(shortenerService, 'createUsersShortenedUrl').mockResolvedValue(null);
       jest.spyOn(shortenerService, 'createShortenedUrl').mockResolvedValue({ key: 'url.com' });
 
-      const body: ShortenerDto = { url: 'https://github.com/origranot/reduced.to', temporary: true };
+      const body: ShortenerDto = { url: 'https://github.com/cbodtorf/nstrct.me', temporary: true };
       const req = {} as Request;
       const short = await shortenerController.shortener(body, req);
       expect(short).toStrictEqual({ key: 'url.com' });
@@ -126,7 +126,7 @@ describe('ShortenerController', () => {
       const KEY = 'url.com';
       const spy = jest.spyOn(shortenerService, 'createShortenedUrl').mockResolvedValue({ key: KEY });
 
-      const body: ShortenerDto = { url: 'https://github.com/origranot/reduced.to', temporary: true, password: 'secret' };
+      const body: ShortenerDto = { url: 'https://github.com/cbodtorf/nstrct.me', temporary: true, password: 'secret' };
       const req = {} as Request;
 
       const { password, ...rest } = body;
@@ -142,7 +142,7 @@ describe('ShortenerController', () => {
       jest.spyOn(shortenerService, 'createShortenedUrl').mockResolvedValue({ key: 'url.com' });
       jest.spyOn(shortenerService, 'isKeyAvailable').mockResolvedValue(false);
 
-      const body: ShortenerDto = { url: 'https://github.com/origranot/reduced.to', key: 'taken' };
+      const body: ShortenerDto = { url: 'https://github.com/cbodtorf/nstrct.me', key: 'taken' };
       const req = {} as Request;
 
       await expect(shortenerController.shortener(body, req)).rejects.toThrow('This short link already exists');
@@ -151,7 +151,7 @@ describe('ShortenerController', () => {
 
   describe('findOne', () => {
     it('should return the original URL when given a valid key', async () => {
-      jest.spyOn(shortenerService, 'getLink').mockResolvedValue({ url: 'https://github.com/origranot/reduced.to', key: 'best' });
+      jest.spyOn(shortenerService, 'getLink').mockResolvedValue({ url: 'https://github.com/cbodtorf/nstrct.me', key: 'best' });
       const key = 'best';
       const clientDetails: IClientDetails = {
         ip: '1.2.3.4',
@@ -159,7 +159,7 @@ describe('ShortenerController', () => {
       };
 
       const link = await shortenerController.findOne(clientDetails, key, '', {} as Request);
-      expect(link).toStrictEqual({ url: 'https://github.com/origranot/reduced.to', key: 'best' });
+      expect(link).toStrictEqual({ url: 'https://github.com/cbodtorf/nstrct.me', key: 'best' });
     });
 
     it('should return an error if the short URL is not found in the database', async () => {
@@ -181,7 +181,7 @@ describe('ShortenerController', () => {
     it('should return the original URL when given a valid key and correct password', async () => {
       jest
         .spyOn(shortenerService, 'getLink')
-        .mockResolvedValue({ url: 'https://github.com/origranot/reduced.to', key: 'best', password: 'correct-password' });
+        .mockResolvedValue({ url: 'https://github.com/cbodtorf/nstrct.me', key: 'best', password: 'correct-password' });
       jest.spyOn(shortenerService, 'verifyPassword').mockResolvedValue(true);
       const key = 'best';
       const clientDetails: IClientDetails = {
@@ -190,13 +190,13 @@ describe('ShortenerController', () => {
       };
 
       const link = await shortenerController.findOne(clientDetails, key, 'correct-password', {} as Request);
-      expect(link).toStrictEqual({ url: 'https://github.com/origranot/reduced.to', key: 'best' });
+      expect(link).toStrictEqual({ url: 'https://github.com/cbodtorf/nstrct.me', key: 'best' });
     });
 
     it('should throw an error if the password is incorrect / missing', async () => {
       jest
         .spyOn(shortenerService, 'getLink')
-        .mockResolvedValue({ url: 'https://github.com/origranot/reduced.to', key: 'best', password: 'correct-password' });
+        .mockResolvedValue({ url: 'https://github.com/cbodtorf/nstrct.me', key: 'best', password: 'correct-password' });
       jest.spyOn(shortenerService, 'verifyPassword').mockResolvedValue(false);
       const key = 'best';
       const clientDetails: IClientDetails = {

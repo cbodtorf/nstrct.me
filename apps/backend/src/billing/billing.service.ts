@@ -1,6 +1,6 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
-import { Plan, PrismaService } from '@reduced.to/prisma';
-import { PLAN_LEVELS, UsageService } from '@reduced.to/subscription-manager';
+import { Plan, PrismaService } from '@nstrct.me/prisma';
+import { PLAN_LEVELS, UsageService } from '@nstrct.me/subscription-manager';
 import {
   Environment,
   Paddle,
@@ -8,8 +8,8 @@ import {
   SubscriptionCanceledEvent,
   SubscriptionUpdatedEvent,
 } from '@paddle/paddle-node-sdk';
-import { AppConfigService } from '@reduced.to/config';
-import { AppLoggerService } from '@reduced.to/logger';
+import { AppConfigService } from '@nstrct.me/config';
+import { AppLoggerService } from '@nstrct.me/logger';
 
 @Injectable()
 export class BillingService implements OnModuleInit {

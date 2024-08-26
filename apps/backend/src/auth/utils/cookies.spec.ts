@@ -3,7 +3,7 @@ import { AUTH_COOKIE_EXPIRES, AUTH_COOKIE_NAME, REFRESH_COOKIE_EXPIRES, REFRESH_
 
 describe('setAuthCookies', () => {
   let res: Response;
-  const domain = 'reduced.to';
+  const domain = 'nstrct.me';
 
   beforeEach(() => {
     res = {

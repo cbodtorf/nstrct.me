@@ -1,13 +1,13 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: reduced-ingress
+  name: nstrct-ingress
   namespace: {{ .Values.namespace }}
   annotations:
     cert-manager.io/cluster-issuer: {{ required "TLS issuer has to be defined" .Values.tls.issuer }}
     kubernetes.io/ingress.class: 'nginx'
   labels:
-    app: reduced
+    app: nstrct
 spec:
   ingressClassName: nginx
   tls:

@@ -3,8 +3,8 @@ import { NestFactory } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { useContainer } from 'class-validator';
 import { AppModule } from './app.module';
-import { AppConfigService } from '@reduced.to/config';
-import { AppLoggerService } from '@reduced.to/logger';
+import { AppConfigService } from '@nstrct.me/config';
+import { AppLoggerService } from '@nstrct.me/logger';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 

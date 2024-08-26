@@ -1,7 +1,7 @@
 import { Injectable, CanActivate, ExecutionContext } from '@nestjs/common';
 import { Observable } from 'rxjs';
 import { UserContext } from '../auth/interfaces/user-context';
-import { PLAN_LEVELS } from '@reduced.to/subscription-manager';
+import { PLAN_LEVELS } from '@nstrct.me/subscription-manager';
 
 @Injectable()
 export class RestrictDays implements CanActivate {

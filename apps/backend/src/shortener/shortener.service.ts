@@ -1,13 +1,13 @@
 import { AppCacheService, LinkValue } from '../cache/cache.service';
 import { BadRequestException, Injectable } from '@nestjs/common';
-import { AppConfigService } from '@reduced.to/config';
-import { PrismaService } from '@reduced.to/prisma';
+import { AppConfigService } from '@nstrct.me/config';
+import { PrismaService } from '@nstrct.me/prisma';
 import { ShortenerDto } from './dto';
 import { UserContext } from '../auth/interfaces/user-context';
-import { Link } from '@reduced.to/prisma';
+import { Link } from '@nstrct.me/prisma';
 import * as argon2 from 'argon2';
-import { createUtmObject } from '@reduced.to/utils';
-import { UsageService } from '@reduced.to/subscription-manager';
+import { createUtmObject } from '@nstrct.me/utils';
+import { UsageService } from '@nstrct.me/subscription-manager';
 
 @Injectable()
 export class ShortenerService {

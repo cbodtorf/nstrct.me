@@ -14,12 +14,12 @@ import { BillingService } from './billing.service';
 import { JwtAuthGuard } from '../auth/guards/jwt.guard';
 import { UserContext } from '../auth/interfaces/user-context';
 import { UserCtx } from '../shared/decorators';
-import { AppConfigService } from '@reduced.to/config';
+import { AppConfigService } from '@nstrct.me/config';
 import { Body, Headers } from '@nestjs/common';
 import { EventName, SubscriptionActivatedEvent, SubscriptionCanceledEvent, SubscriptionUpdatedEvent } from '@paddle/paddle-node-sdk';
 import { Request } from 'express';
 import { UpdatePlanDto } from './dto/update-plan.dto';
-import { AppLoggerService } from '@reduced.to/logger';
+import { AppLoggerService } from '@nstrct.me/logger';
 import { AuthService } from '../auth/auth.service';
 
 @Controller('billing')

@@ -1,6 +1,6 @@
 import { $, component$, Slot } from '@builder.io/qwik';
 import { LuBadgeCheck } from '@qwikest/icons/lucide';
-import { PLAN_LEVELS, FEATURES } from '@reduced.to/subscription-manager';
+import { PLAN_LEVELS, FEATURES } from '@nstrct.me/subscription-manager';
 import { useGetCurrentUser } from '../../../../frontend/src/routes/layout';
 
 interface ConditionalWrapperProps {

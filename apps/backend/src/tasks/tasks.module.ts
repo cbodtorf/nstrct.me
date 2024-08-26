@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { UsageModule } from '@reduced.to/subscription-manager';
+import { UsageModule } from '@nstrct.me/subscription-manager';
 import { TasksService } from './tasks.service';
 import { ScheduleModule } from '@nestjs/schedule';
 

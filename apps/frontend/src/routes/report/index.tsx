@@ -28,7 +28,7 @@ export const useReport = globalAction$(
     }
 
     return {
-      message: 'Your report has been submitted. Thank you for helping us keep Reduced.to safe.',
+      message: 'Your report has been submitted. Thank you for helping us keep Nstrct.me safe.',
     };
   },
   zod$({
@@ -70,7 +70,7 @@ export default component$(() => {
           <h1 class="text-lg font-bold">Report abuse</h1>
           <p class="text-gray-600 dark:text-gray-300">
             If you believe a link violates our terms of service, please report it below. We will review the link and take appropriate
-            action. Thank you for helping us keep Reduced.to safe.
+            action. Thank you for helping us keep Nstrct.me safe.
           </p>
           <div class="divider"></div>
           <Form
@@ -94,7 +94,7 @@ export default component$(() => {
                 <input
                   name="link"
                   type="text"
-                  placeholder="reduced.to/example"
+                  placeholder="nstrct.me/example"
                   class="input input-bordered join-item focus:outline-0 w-full sm:!rounded-e-none !rounded-e-lg"
                   onInput$={(ev: InputEvent) => {
                     linkValue.value = (ev.target as HTMLInputElement).value;
@@ -142,15 +142,15 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Reduced.to | Report Link',
+  title: 'Nstrct.me | Report Link',
   meta: [
     {
       name: 'title',
-      content: 'Reduced.to | Report Link',
+      content: 'Nstrct.me | Report Link',
     },
     {
       name: 'description',
-      content: 'Reduced.to | Report a link that violates our terms of service.',
+      content: 'Nstrct.me | Report a link that violates our terms of service.',
     },
     {
       property: 'og:type',
@@ -158,15 +158,15 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:url',
-      content: 'https://reduced.to/register',
+      content: 'https://nstrct.me/register',
     },
     {
       property: 'og:title',
-      content: 'Reduced.to | Report Link',
+      content: 'Nstrct.me | Report Link',
     },
     {
       property: 'og:description',
-      content: 'Reduced.to | Report a link that violates our terms of service.',
+      content: 'Nstrct.me | Report a link that violates our terms of service.',
     },
     {
       property: 'twitter:card',
@@ -174,11 +174,11 @@ export const head: DocumentHead = {
     },
     {
       property: 'twitter:title',
-      content: 'Reduced.to | Report Link',
+      content: 'Nstrct.me | Report Link',
     },
     {
       property: 'twitter:description',
-      content: 'Reduced.to | Report a link that violates our terms of service.',
+      content: 'Nstrct.me | Report a link that violates our terms of service.',
     },
   ],
 };

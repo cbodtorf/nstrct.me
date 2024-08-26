@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { UsersService } from './users.service';
-import { PrismaService } from '@reduced.to/prisma';
+import { PrismaService } from '@nstrct.me/prisma';
 import { IFindAllOptions } from '../entity.service';
 import { SortOrder } from '../../shared/enums/sort-order.enum';
 

@@ -6,8 +6,8 @@ export default component$(() => {
     <div class="text-left py-8 md:container md:mx-auto mx-5">
       <h1 class="text-5xl font-bold my-8">Terms and Conditions</h1>
       <p class="leading-relaxed dark:text-gray-300">
-        Subject to these Terms of Service (this "Agreement"), Reduced.to ("Reduced.to", "we", "us" and/or "our") provides access to
-        Reduced.to's cloud platform as a service (collectively, the "Services"). By using or accessing the Services, you acknowledge that
+        Subject to these Terms of Service (this "Agreement"), Nstrct.me ("Nstrct.me", "we", "us" and/or "our") provides access to
+        Nstrct.me's cloud platform as a service (collectively, the "Services"). By using or accessing the Services, you acknowledge that
         you have read, understand, and agree to be bound by this Agreement.
       </p>
       <p class="leading-relaxed dark:text-gray-300">
@@ -17,13 +17,13 @@ export default component$(() => {
       </p>
       <h2 class="text-lg font-bold mt-10 mb-2">Acceptance of Terms</h2>
       <p class="leading-relaxed dark:text-gray-300">
-        By signing up and using the services provided by Reduced.to (referred to as the "Service"), you are agreeing to be bound by the
-        following terms and conditions ("Terms of Service"). The Service is owned and operated by Reduced.to ("Us", "We", or "Our").
+        By signing up and using the services provided by Nstrct.me (referred to as the "Service"), you are agreeing to be bound by the
+        following terms and conditions ("Terms of Service"). The Service is owned and operated by Nstrct.me ("Us", "We", or "Our").
       </p>
       <h2 class="text-lg font-bold mt-10 mb-2">Description of Service</h2>
       <p class="leading-relaxed dark:text-gray-300">
-        Reduced.to provides a link management tool for modern marketing teams to create, share, and track short links ("the Product"). The
-        Product is accessible at reduced.to and other domains and subdomains controlled by Us (collectively, "the Website").
+        Nstrct.me provides a link management tool for modern marketing teams to create, share, and track short links ("the Product"). The
+        Product is accessible at nstrct.me and other domains and subdomains controlled by Us (collectively, "the Website").
       </p>
       <h2 class="text-lg font-bold mt-10 mb-2">Fair Use</h2>
       <p class="leading-relaxed dark:text-gray-300">
@@ -49,7 +49,7 @@ export default component$(() => {
       </p>
       <h2 class="text-lg font-bold mt-10 mb-2">Shortlink Ownership</h2>
       <p class="leading-relaxed dark:text-gray-300">
-        If you're using a default Reduced.to-owned domain (e.g. reduced.to), we reserve the right to reclaim the shortlink if needed,
+        If you're using a default Nstrct.me-owned domain (e.g. nstrct.me), we reserve the right to reclaim the shortlink if needed,
         particularly if it is necessary for brand compliance, to prevent confusion among users, or to maintain the integrity and reputation
         of our Service.
       </p>
@@ -62,45 +62,45 @@ export default component$(() => {
       <h2 class="text-lg font-bold mt-10 mb-2">Refund Policy</h2>
       <p class="leading-relaxed dark:text-gray-300">
         We do not allow refunds of any kind. All sales are final. If you have any issues or concerns with the services, please contact us
-        directly at ori@reduced.to to address and resolve the matter.
+        directly at ori@nstrct.me to address and resolve the matter.
       </p>
-      <h2 class="text-lg font-bold mt-10 mb-2">Usage of Reduced.to</h2>
+      <h2 class="text-lg font-bold mt-10 mb-2">Usage of Nstrct.me</h2>
       <p class="leading-relaxed dark:text-gray-300">
-        You agree to use Reduced.to only for lawful purposes and in accordance with these Terms. You are solely responsible for the content
-        of your links and for ensuring that your use of Reduced.to complies with all applicable laws and regulations. Reduced.to takes no
+        You agree to use Nstrct.me only for lawful purposes and in accordance with these Terms. You are solely responsible for the content
+        of your links and for ensuring that your use of Nstrct.me complies with all applicable laws and regulations. Nstrct.me takes no
         responsibility for any illegal or unauthorized use of our service by you.
       </p>
       <h2 class="text-lg font-bold mt-10 mb-2">Compliance with Laws</h2>
       <p class="leading-relaxed dark:text-gray-300">
-        You agree to comply with all applicable laws and regulations in connection with your use of Reduced.to. You are responsible for
+        You agree to comply with all applicable laws and regulations in connection with your use of Nstrct.me. You are responsible for
         ensuring that your use of the service does not violate any laws or regulations, including but not limited to those related to
         intellectual property, data privacy, and online conduct.
       </p>
       <h2 class="text-lg font-bold mt-10 mb-2">Contact Information</h2>
       <p class="leading-relaxed dark:text-gray-300">
-        Questions or comments about the Website or these Terms of Service may be directed to our team at ori@reduced.to.
+        Questions or comments about the Website or these Terms of Service may be directed to our team at ori@nstrct.me.
       </p>
       <p class="leading-relaxed dark:text-gray-300 mt-10">
-        By using Reduced.to, you acknowledge that you have read these Terms of Service, understood them, and agree to be bound by them. If
+        By using Nstrct.me, you acknowledge that you have read these Terms of Service, understood them, and agree to be bound by them. If
         you do not agree to these Terms of Service, you are not authorized to use the Service. We reserve the right to change these Terms of
         Service at any time, so please review them frequently.
       </p>
-      <p class="leading-relaxed dark:text-gray-300 mt-5">Thank you for using Reduced.to!</p>
+      <p class="leading-relaxed dark:text-gray-300 mt-5">Thank you for using Nstrct.me!</p>
     </div>
   );
 });
 
 const year = new Date().getFullYear();
 export const head: DocumentHead = {
-  title: 'Reduced.to | Terms and Conditions',
+  title: 'Nstrct.me | Terms and Conditions',
   meta: [
     {
       name: 'title',
-      content: `Reduced.to | Terms and Conditions`,
+      content: `Nstrct.me | Terms and Conditions`,
     },
     {
       name: 'description',
-      content: `Reduced.to | Terms and Conditions ${year}`,
+      content: `Nstrct.me | Terms and Conditions ${year}`,
     },
     {
       property: 'og:type',
@@ -108,15 +108,15 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:url',
-      content: 'https://reduced.to/terms-and-conditions',
+      content: 'https://nstrct.me/terms-and-conditions',
     },
     {
       property: 'og:title',
-      content: `Reduced.to | Terms and Conditions`,
+      content: `Nstrct.me | Terms and Conditions`,
     },
     {
       property: 'og:description',
-      content: `Reduced.to | Terms and Conditions ${year}`,
+      content: `Nstrct.me | Terms and Conditions ${year}`,
     },
     {
       property: 'twitter:card',
@@ -124,11 +124,11 @@ export const head: DocumentHead = {
     },
     {
       property: 'twitter:title',
-      content: `Reduced.to | Terms and Conditions`,
+      content: `Nstrct.me | Terms and Conditions`,
     },
     {
       property: 'twitter:description',
-      content: `Reduced.to | Terms and Conditions ${year}`,
+      content: `Nstrct.me | Terms and Conditions ${year}`,
     },
   ],
 };

@@ -3,13 +3,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Reduced.to',
+  title: 'nstrct.me',
   staticDirectories: ['apps/docs/public', 'apps/docs/static'],
-  tagline: "Reduced.to is a modern web application that reduces the length of link URL, so it's easier to remember, share and track.",
+  tagline: "nstrct.me is a modern web application that reduces the length of link URL, so it's easier to remember, share and track.",
   favicon: 'images/favicon.png',
-  url: 'https://reduced.to/',
+  url: 'https://nstrct.me/',
   baseUrl: '/',
-  projectName: 'reduced.to',
+  projectName: 'nstrct.me',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
@@ -24,7 +24,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          editUrl: 'https://github.com/origranot/reduced.to/tree/master/',
+          editUrl: 'https://github.com/cbodtorf/nstrct.me/tree/master/',
           path: 'apps/docs/docs',
         },
         pages: {
@@ -43,10 +43,10 @@ const config = {
     ({
       navbar: {
         logo: {
-          alt: 'Reduced.to Logo',
+          alt: 'nstrct.me Logo',
           src: 'images/logo.svg',
           srcDark: 'images/logo-dark.svg',
-          href: 'https://reduced.to',
+          href: 'https://nstrct.me',
           target: '_self',
           width: '70%',
         },
@@ -57,13 +57,13 @@ const config = {
           },
           {
             position: 'right',
-            href: 'https://reduced.to',
+            href: 'https://nstrct.me',
             label: 'Visit App',
           },
 
           {
             position: 'right',
-            href: 'https://github.com/origranot/reduced.to',
+            href: 'https://github.com/cbodtorf/nstrct.me',
             html: `
                 <a  aria-label="GitHub" class="navbar-github-link">
                   <img src="images/github-logo.png" alt="GitHub Logo" class="navbar-github-logo" />
@@ -73,7 +73,7 @@ const config = {
         ],
       },
       footer: {
-        copyright: `Copyright © ${new Date().getFullYear()} Reduced.to, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} nstrct.me, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

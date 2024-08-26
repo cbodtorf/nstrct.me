@@ -8,7 +8,7 @@ import { SocialMediaPreview } from './social-media-preview/social-media-preview'
 import { UNKNOWN_FAVICON } from '../../../temporary-links/utils';
 import { useDebouncer } from '../../../../utils/debouncer';
 import { LuEye, LuEyeOff, LuDices } from '@qwikest/icons/lucide';
-import { sleep } from '@reduced.to/utils';
+import { sleep } from '@nstrct.me/utils';
 import { useGetCurrentUser } from '../../../../../../frontend/src/routes/layout';
 import { ConditionalWrapper, getRequiredFeatureLevel } from '../../plan-wrapper';
 
@@ -298,7 +298,7 @@ export const LinkModal = component$(({ onSubmitHandler }: LinkModalProps) => {
                   <input
                     name="url"
                     type="text"
-                    placeholder="https://github.com/origranot/reduced.to"
+                    placeholder="https://github.com/cbodtorf/nstrct.me"
                     class="input input-bordered w-full"
                     value={inputValue.value.url}
                     onInput$={(ev: InputEvent) => {
@@ -339,7 +339,7 @@ export const LinkModal = component$(({ onSubmitHandler }: LinkModalProps) => {
                   </div>
                   <div class="join w-full">
                     <select class={`select select-bordered join-item ${requiredLevelToCustomShortLink.value ? 'select-disabled' : ''}`}>
-                      <option selected>reduced.to</option>
+                      <option selected>nstrct.me</option>
                     </select>
                     <div class="w-full">
                       <input
@@ -474,7 +474,7 @@ export const LinkModal = component$(({ onSubmitHandler }: LinkModalProps) => {
                               onInput$={(ev: InputEvent) => {
                                 inputValue.value.utm_ref = (ev.target as HTMLInputElement).value;
                               }}
-                              placeholder="reduced.to"
+                              placeholder="nstrct.me"
                               name="utm_ref"
                               class="input input-bordered w-full"
                             />

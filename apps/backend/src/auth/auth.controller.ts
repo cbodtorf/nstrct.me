@@ -1,8 +1,8 @@
 import { Body, Controller, Get, Post, Req, Res, UnauthorizedException, UseGuards } from '@nestjs/common';
 import { Request, Response } from 'express';
-import { AppConfigService } from '@reduced.to/config';
+import { AppConfigService } from '@nstrct.me/config';
 import { NovuService } from '../novu/novu.service';
-import { Plan, PrismaService, Subscription } from '@reduced.to/prisma';
+import { Plan, PrismaService, Subscription } from '@nstrct.me/prisma';
 import { AuthService } from './auth.service';
 import { SignupDto } from './dto/signup.dto';
 import { JwtRefreshAuthGuard } from './guards/jwt-refresh.guard';

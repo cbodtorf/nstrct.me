@@ -4,15 +4,15 @@ import { Request } from 'express';
 import { ShortenerService } from './shortener.service';
 import { UserContext } from '../auth/interfaces/user-context';
 import { OptionalJwtAuthGuard } from '../auth/guards/optional-jwt-auth.guard';
-import { AppLoggerService } from '@reduced.to/logger';
+import { AppLoggerService } from '@nstrct.me/logger';
 import { ShortenerProducer } from './producer/shortener.producer';
 import { ClientDetails, IClientDetails } from '../shared/decorators/client-details/client-details.decorator';
-import { SafeUrlService } from '@reduced.to/safe-url';
-import { AppConfigService } from '@reduced.to/config';
+import { SafeUrlService } from '@nstrct.me/safe-url';
+import { AppConfigService } from '@nstrct.me/config';
 import { Link } from '@prisma/client';
-import { addUtmParams } from '@reduced.to/utils';
+import { addUtmParams } from '@nstrct.me/utils';
 import { JwtAuthGuard } from '../auth/guards/jwt.guard';
-import { UsageService } from '@reduced.to/subscription-manager';
+import { UsageService } from '@nstrct.me/subscription-manager';
 import { GuardFields } from './guards/feature.guard';
 
 interface LinkResponse extends Partial<Link> {

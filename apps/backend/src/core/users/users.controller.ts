@@ -1,5 +1,5 @@
 import { Body, Controller, Get, Patch, Query, UseGuards } from '@nestjs/common';
-import { Role, User } from '@reduced.to/prisma';
+import { Role, User } from '@nstrct.me/prisma';
 import { FindAllQueryDto, CountQueryDto } from './dto';
 import { UsersService } from './users.service';
 import { JwtAuthGuard } from '../../auth/guards/jwt.guard';
@@ -9,8 +9,8 @@ import { IPaginationResult, calculateSkip } from '../../shared/utils';
 import { UpdateDto } from './dto/update.dto';
 import { UserContext } from '../../auth/interfaces/user-context';
 import { PROFILE_PICTURE_PREFIX, StorageService } from '../../storage/storage.service';
-import { AppLoggerService } from '@reduced.to/logger';
-import { AppConfigService } from '@reduced.to/config';
+import { AppLoggerService } from '@nstrct.me/logger';
+import { AppConfigService } from '@nstrct.me/config';
 import { AuthService } from '../../auth/auth.service';
 
 @UseGuards(JwtAuthGuard, RolesGuard)

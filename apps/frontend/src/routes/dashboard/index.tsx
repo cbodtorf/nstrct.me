@@ -10,7 +10,7 @@ import { NoData } from '../../components/dashboard/empty-data/no-data';
 import { DELETE_MODAL_ID, GenericModal } from '../../components/dashboard/generic-modal/generic-modal';
 import { useDeleteLink } from '../../components/dashboard/links/link/use-delete-link';
 import { QR_CODE_DIALOG_ID, QrCodeDialog } from '../../components/temporary-links/qr-code-dialog/qr-code-dialog';
-import { addUtmParams } from '@reduced.to/utils';
+import { addUtmParams } from '@nstrct.me/utils';
 
 export default component$(() => {
   const toaster = useToaster();
@@ -225,15 +225,15 @@ function debounce<T extends (...args: any[]) => any>(func: T, wait: number): (..
 }
 
 export const head: DocumentHead = {
-  title: 'Reduced.to | Dashboard',
+  title: 'Nstrct.me | Dashboard',
   meta: [
     {
       name: 'title',
-      content: 'Reduced.to | Dashboard - My links',
+      content: 'Nstrct.me | Dashboard - My links',
     },
     {
       name: 'description',
-      content: 'Reduced.to | Your links page. see your links, shorten links, and more!',
+      content: 'Nstrct.me | Your links page. see your links, shorten links, and more!',
     },
     {
       property: 'og:type',
@@ -241,15 +241,15 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:url',
-      content: 'https://reduced.to/dashboard',
+      content: 'https://nstrct.me/dashboard',
     },
     {
       property: 'og:title',
-      content: 'Reduced.to | Dashboard - My links',
+      content: 'Nstrct.me | Dashboard - My links',
     },
     {
       property: 'og:description',
-      content: 'Reduced.to | Your links page. see your links, shorten links, and more!',
+      content: 'Nstrct.me | Your links page. see your links, shorten links, and more!',
     },
     {
       property: 'twitter:card',
@@ -257,11 +257,11 @@ export const head: DocumentHead = {
     },
     {
       property: 'twitter:title',
-      content: 'Reduced.to | Dashboard - My links',
+      content: 'Nstrct.me | Dashboard - My links',
     },
     {
       property: 'twitter:description',
-      content: 'Reduced.to | Your links page. see your links, shorten links, and more!',
+      content: 'Nstrct.me | Your links page. see your links, shorten links, and more!',
     },
   ],
 };

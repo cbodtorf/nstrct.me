@@ -1,9 +1,9 @@
 import request from 'supertest';
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication, ValidationPipe } from '@nestjs/common';
-import { Link, Role } from '@reduced.to/prisma';
+import { Link, Role } from '@nstrct.me/prisma';
 import { JwtAuthGuard } from '../../auth/guards/jwt.guard';
-import { AppConfigModule } from '@reduced.to/config';
+import { AppConfigModule } from '@nstrct.me/config';
 import { RolesGuard } from '../../auth/guards/roles.guard';
 import { IPaginationResult } from '../../shared/utils';
 import { SortOrder } from '../../shared/enums/sort-order.enum';
@@ -17,7 +17,7 @@ describe('LinksController', () => {
   let linksService: LinksService;
 
   const MOCKED_LINKS: Partial<Link>[] = [
-    { id: '1', url: 'https://reduced.to', key: 'nice' },
+    { id: '1', url: 'https://nstrct.me', key: 'nice' },
     { id: '2', url: 'https://google.com', key: 'good' },
   ];
 
@@ -113,12 +113,12 @@ describe('LinksController', () => {
       const findAllOptions: IFindAllOptions = {
         skip: 10,
         limit: 10,
-        filter: 'reduced.to',
+        filter: 'nstrct.me',
         sort: undefined,
         extraWhereClause: { userId: expect.anything() },
       };
 
-      await request(app.getHttpServer()).get('/links?limit=10&page=2&filter=reduced.to').expect(200);
+      await request(app.getHttpServer()).get('/links?limit=10&page=2&filter=nstrct.me').expect(200);
 
       expect(linksService.findAll).toHaveBeenCalledWith(findAllOptions);
     });

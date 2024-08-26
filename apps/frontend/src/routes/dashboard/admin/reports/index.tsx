@@ -116,15 +116,15 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Reduced.to | Admin Dashboard - Reports',
+  title: 'Nstrct.me | Admin Dashboard - Reports',
   meta: [
     {
       name: 'title',
-      content: 'Reduced.to | Admin Dashboard - Reports',
+      content: 'Nstrct.me | Admin Dashboard - Reports',
     },
     {
       name: 'description',
-      content: 'Reduced.to | Admin Dashboard - See all reports',
+      content: 'Nstrct.me | Admin Dashboard - See all reports',
     },
     {
       property: 'og:type',
@@ -132,15 +132,15 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:url',
-      content: 'https://reduced.to/dashboard',
+      content: 'https://nstrct.me/dashboard',
     },
     {
       property: 'og:title',
-      content: 'Reduced.to | Admin Dashboard - Reports',
+      content: 'Nstrct.me | Admin Dashboard - Reports',
     },
     {
       property: 'og:description',
-      content: 'Reduced.to | Admin Dashboard - See all reports',
+      content: 'Nstrct.me | Admin Dashboard - See all reports',
     },
     {
       property: 'twitter:card',
@@ -148,11 +148,11 @@ export const head: DocumentHead = {
     },
     {
       property: 'twitter:title',
-      content: 'Reduced.to | Admin Dashboard - Reports',
+      content: 'Nstrct.me | Admin Dashboard - Reports',
     },
     {
       property: 'twitter:description',
-      content: 'Reduced.to | Admin Dashboard - See all reports',
+      content: 'Nstrct.me | Admin Dashboard - See all reports',
     },
   ],
 };

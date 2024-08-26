@@ -9,7 +9,7 @@ services:
       - POSTGRES_PORT=5432
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=reduced_to_db
+      - POSTGRES_DB=nstrct_me_db
     volumes:
       - ../../tmp/data/postgresql:/var/lib/postgresql/data
     ports:

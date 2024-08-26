@@ -1,6 +1,6 @@
 import { Inject, OnModuleInit } from '@nestjs/common';
 import { QueueManagerService } from '../queue-manager.service';
-import { AppLoggerService } from '@reduced.to/logger';
+import { AppLoggerService } from '@nstrct.me/logger';
 import { Consumer, KafkaMessage } from 'kafkajs';
 
 export abstract class ConsumerService implements OnModuleInit {

@@ -1,7 +1,7 @@
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
-import { AppConfigService } from '@reduced.to/config';
-import { Prisma, PrismaService, ProviderType, Role } from '@reduced.to/prisma';
+import { AppConfigService } from '@nstrct.me/config';
+import { Prisma, PrismaService, ProviderType, Role } from '@nstrct.me/prisma';
 import * as bcrypt from 'bcryptjs';
 import { SignupDto } from './dto/signup.dto';
 import { UserContext } from './interfaces/user-context';
@@ -190,7 +190,7 @@ export class AuthService {
       role: user.role,
       plan: user.plan || 'FREE',
       verified: user.verified,
-      iss: 'reduced.to',
+      iss: 'nstrct.me',
     };
 
     return this.jwtService.sign(payload, {

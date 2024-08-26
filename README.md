@@ -14,19 +14,19 @@
 <br />
 <div align="center">
   
-[![logo](https://raw.githubusercontent.com/origranot/reduced.to/ec59ee1dfe4c858b89d2d22935e2734d52794ea3/frontend/public/logo.svg)](https://reduced.to)
+[![logo](https://raw.githubusercontent.com/cbodtorf/nstrct.me/ec59ee1dfe4c858b89d2d22935e2734d52794ea3/frontend/public/logo.svg)](https://nstrct.me)
 
-[![Preview](/assets/images/preview.gif)](https://reduced.to)
+[![Preview](/assets/images/preview.gif)](https://nstrct.me)
 
   <p align="center">
-    Reduced.to is a modern web application that reduces the length of link URL. So it's easier to remember, share and track.
+    Nstrct.me is a modern web application that reduces the length of link URL. So it's easier to remember, share and track.
     <br />
     <br />
-    <a href="https://reduced.to">App</a>
+    <a href="https://nstrct.me">App</a>
     ·
-    <a href="https://github.com/origranot/reduced.to/issues/new?assignees=&labels=bug%2Ctriage&template=bug.yml">Report Bug</a>
+    <a href="https://github.com/cbodtorf/nstrct.me/issues/new?assignees=&labels=bug%2Ctriage&template=bug.yml">Report Bug</a>
     ·
-    <a href="https://github.com/origranot/reduced.to/issues/new?assignees=&labels=enhancement%2Ctriage&template=feature_request.yml">Request Feature</a>
+    <a href="https://github.com/cbodtorf/nstrct.me/issues/new?assignees=&labels=enhancement%2Ctriage&template=feature_request.yml">Request Feature</a>
   </p>
 </div>
 <br />
@@ -67,7 +67,7 @@
 ## 🌐 About The Project
 
 <div align="center">
-<img src="docs/reduced-to.gif" width="600" height="254">
+<img src="docs/nstrct-me.gif" width="600" height="254">
 </div>
 
 ### 🔥 Built With
@@ -101,7 +101,7 @@ List of things you need to run the project locally and how to install them.
 
 ### 💻 Installation
 
-1. [Fork](https://github.com/origranot/reduced.to/fork) / Clone this repository
+1. [Fork](https://github.com/cbodtorf/nstrct.me/fork) / Clone this repository
 2. Install NPM packages
    ```sh
    npm install
@@ -109,7 +109,7 @@ List of things you need to run the project locally and how to install them.
 3. Copy `.example.env` to `.env` and fill it properly (see [Configuration](#-configuration))
 4. Make sure you have a local instance of PostgreSQL running on port 5432. If not, you can run it using docker:
    ```sh
-   docker run --name reduced_to_db -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=reduced_to_db -p 5432:5432 -d postgres
+   docker run --name nstrct_me_db -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=nstrct_me_db -p 5432:5432 -d postgres
    ```
 5. Run Prisma migration from root folder:
    ```sh
@@ -154,7 +154,7 @@ npx nx run-many -t docker-build
 - When you run the command below, don't forget to change the .env file with the correct values.
 
   ```sh
-  docker compose -f docker/local/docker-compose.yml -p reduced-to up
+  docker compose -f docker/local/docker-compose.yml -p nstrct-me up
   ```
 
 ### ☸ Deployment
@@ -166,7 +166,7 @@ You can deploy the app to a Kubernetes cluster by installing the [Helm](https://
 3. Run the following command to deploy the app to your cluster:
 
 ```sh
-helm install reduced-to . --namespace reduced-to --create-namespace
+helm install nstrct-me . --namespace nstrct-me --create-namespace
 ```
 
 ### 👷 Configuration
@@ -258,7 +258,7 @@ If you want to change your plan on developemnt (Assuming you have a local instan
 Simply copy and paste a URL into the provided area. Then click shorten URL! Your URL has now been shortened!
 
 <div align="center">
-<img src="docs/reduced-to.gif" width="600" height="254">
+<img src="docs/nstrct-me.gif" width="600" height="254">
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -286,9 +286,9 @@ Simply copy and paste a URL into the provided area. Then click shorten URL! Your
 - [ ] Add a statistics page
 - [ ] Add more ideas
 
-Just create a [Pull request](https://github.com/origranot/reduced.to/pulls) already 😃
+Just create a [Pull request](https://github.com/cbodtorf/nstrct.me/pulls) already 😃
 
-_See the [open issues](https://github.com/origranot/reduced.to/issues) for a full list of proposed features (and known issues)._
+_See the [open issues](https://github.com/cbodtorf/nstrct.me/issues) for a full list of proposed features (and known issues)._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -309,8 +309,8 @@ Don't forget to give the project a star ⭐!
 
 ## 🏆 Contributors
 
-<a href = "https://github.com/origranot/reduced.to/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo=origranot/reduced.to"/>
+<a href = "https://github.com/cbodtorf/nstrct.me/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=cbodtorf/nstrct.me"/>
 </a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -326,20 +326,20 @@ This project is licensed under the terms of the [MIT License](LICENSE)
 
 ## 💌 Contact
 
-Project Link: [https://github.com/origranot/reduced.to](https://github.com/origranot/reduced.to)
+Project Link: [https://github.com/cbodtorf/nstrct.me](https://github.com/cbodtorf/nstrct.me)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/origranot/reduced.to.svg?style=for-the-badge
-[contributors-url]: https://github.com/origranot/reduced.to/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/origranot/reduced.to.svg?style=for-the-badge
-[forks-url]: https://github.com/origranot/reduced.to/network/members
-[stars-shield]: https://img.shields.io/github/stars/origranot/reduced.to.svg?style=for-the-badge
-[stars-url]: https://github.com/origranot/reduced.to/stargazers
-[issues-shield]: https://img.shields.io/github/issues/origranot/reduced.to.svg?style=for-the-badge
-[issues-url]: https://github.com/origranot/reduced.to/issues
+[contributors-shield]: https://img.shields.io/github/contributors/cbodtorf/nstrct.me.svg?style=for-the-badge
+[contributors-url]: https://github.com/cbodtorf/nstrct.me/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/cbodtorf/nstrct.me.svg?style=for-the-badge
+[forks-url]: https://github.com/cbodtorf/nstrct.me/network/members
+[stars-shield]: https://img.shields.io/github/stars/cbodtorf/nstrct.me.svg?style=for-the-badge
+[stars-url]: https://github.com/cbodtorf/nstrct.me/stargazers
+[issues-shield]: https://img.shields.io/github/issues/cbodtorf/nstrct.me.svg?style=for-the-badge
+[issues-url]: https://github.com/cbodtorf/nstrct.me/issues
 [product-screenshot]: docs/gif.gif
 [nx]: https://img.shields.io/static/v1?style=for-the-badge&message=Nx&color=143055&logo=Nx&logoColor=FFFFFF&label=
 [nx-url]: https://nx.dev/

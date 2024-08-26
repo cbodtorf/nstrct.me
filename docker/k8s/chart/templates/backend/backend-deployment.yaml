@@ -22,7 +22,7 @@ spec:
           imagePullPolicy: Always
           envFrom:
             - configMapRef:
-                name: reduced-configmap
+                name: nstrct-configmap
           ports:
             - containerPort: {{ .Values.backend.port | int }}
           {{- if .Values.backend.resources }}

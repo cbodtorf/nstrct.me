@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { Cron, CronExpression } from '@nestjs/schedule';
-import { UsageService } from '@reduced.to/subscription-manager';
+import { UsageService } from '@nstrct.me/subscription-manager';
 
 @Injectable()
 export class TasksService {

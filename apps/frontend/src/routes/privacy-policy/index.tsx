@@ -7,7 +7,7 @@ export default component$(() => {
       <h1 class="text-5xl font-bold my-8">Privacy policy</h1>
       <p class="leading-relaxed dark:text-gray-300">
         This privacy policy ("Policy") describes how Website Operator ("Website Operator", "we", "us", or "our") collects, protects, and
-        uses the personally identifiable information ("Personal Information") you ("User", "you", or "your") may provide on the reduced.to
+        uses the personally identifiable information ("Personal Information") you ("User", "you", or "your") may provide on the nstrct.me
         website and any of its products or services (collectively, "Website" or "Services"). It also describes the choices available to you
         regarding our use of your Personal Information and how you can access and update this information. This Policy does not apply to the
         practices of companies that we do not own or control, or to individuals that we do not employ or manage.
@@ -89,18 +89,18 @@ export default component$(() => {
       <h2 class="text-lg font-bold mt-10 mb-2">Open source and modifications</h2>
       <p class="leading-relaxed dark:text-gray-300">
         This project is open source under MIT{' '}
-        <a class="underline" href="https://github.com/origranot/reduced.to/blob/master/LICENSE">
+        <a class="underline" href="https://github.com/cbodtorf/nstrct.me/blob/master/LICENSE">
           license
         </a>
         . Anyone under the license can use and modify this project according to the terms specified in the license. However, this privacy
-        policy applies specifically to the services provided by reduced.to and does not cover modifications made by individual users or
+        policy applies specifically to the services provided by nstrct.me and does not cover modifications made by individual users or
         third parties to their respective instances of the project.
       </p>
 
       <h2 class="text-lg font-bold mt-10 mb-2">Contacting us</h2>
       <p class="pb-8 leading-relaxed dark:text-gray-300">
-        If you have any questions or concerns regarding this Privacy Policy, please contact at our email ori@reduced.to or at our{' '}
-        <a class="underline" href="https://github.com/origranot/reduced.to">
+        If you have any questions or concerns regarding this Privacy Policy, please contact at our email ori@nstrct.me or at our{' '}
+        <a class="underline" href="https://github.com/cbodtorf/nstrct.me">
           Github
         </a>
       </p>
@@ -110,15 +110,15 @@ export default component$(() => {
 
 const year = new Date().getFullYear();
 export const head: DocumentHead = {
-  title: 'Reduced.to | Privacy Policy',
+  title: 'Nstrct.me | Privacy Policy',
   meta: [
     {
       name: 'title',
-      content: `Reduced.to | Privacy Policy`,
+      content: `Nstrct.me | Privacy Policy`,
     },
     {
       name: 'description',
-      content: `Reduced.to | Privacy Policy ${year}`,
+      content: `Nstrct.me | Privacy Policy ${year}`,
     },
     {
       property: 'og:type',
@@ -126,15 +126,15 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:url',
-      content: 'https://reduced.to/privacy-policy',
+      content: 'https://nstrct.me/privacy-policy',
     },
     {
       property: 'og:title',
-      content: `Reduced.to | Privacy Policy`,
+      content: `Nstrct.me | Privacy Policy`,
     },
     {
       property: 'og:description',
-      content: `Reduced.to | Privacy Policy ${year}`,
+      content: `Nstrct.me | Privacy Policy ${year}`,
     },
     {
       property: 'twitter:card',
@@ -142,11 +142,11 @@ export const head: DocumentHead = {
     },
     {
       property: 'twitter:title',
-      content: `Reduced.to | Privacy Policy`,
+      content: `Nstrct.me | Privacy Policy`,
     },
     {
       property: 'twitter:description',
-      content: `Reduced.to | Privacy Policy ${year}`,
+      content: `Nstrct.me | Privacy Policy ${year}`,
     },
   ],
 };

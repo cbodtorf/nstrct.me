@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { PrismaService } from '@reduced.to/prisma';
+import { PrismaService } from '@nstrct.me/prisma';
 import uap from 'ua-parser-js';
 import geoip from 'geoip-lite';
-import { capitalize, setToIfUndefined } from '@reduced.to/utils';
+import { capitalize, setToIfUndefined } from '@nstrct.me/utils';
 
 @Injectable()
 export class VisitsService {

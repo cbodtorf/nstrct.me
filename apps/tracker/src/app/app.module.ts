@@ -1,6 +1,6 @@
 import { Global, Module } from '@nestjs/common';
-import { AppConfigModule } from '@reduced.to/config';
-import { AppLoggerModule } from '@reduced.to/logger';
+import { AppConfigModule } from '@nstrct.me/config';
+import { AppLoggerModule } from '@nstrct.me/logger';
 import { VisitsModule } from '../visits/visits.module';
 
 @Global()

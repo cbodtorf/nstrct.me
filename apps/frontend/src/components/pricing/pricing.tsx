@@ -1,6 +1,6 @@
 import { component$, useSignal } from '@builder.io/qwik';
 import { LuCheck } from '@qwikest/icons/lucide';
-import { PLAN_LEVELS, FEATURES, FeatureKey } from '@reduced.to/subscription-manager';
+import { PLAN_LEVELS, FEATURES, FeatureKey } from '@nstrct.me/subscription-manager';
 import { BillingCard } from './billing-card';
 import { AnnualToggle } from './annual-toggle';
 import { useGetCurrentUser } from '../../routes/layout';

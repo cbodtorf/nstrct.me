@@ -1,4 +1,4 @@
-import { PrismaService } from '@reduced.to/prisma';
+import { PrismaService } from '@nstrct.me/prisma';
 import { IPaginationOptions, IPaginationResult, orderByBuilder } from '../shared/utils';
 import { SortOrder } from '../shared/enums/sort-order.enum';
 import { filterBuilder } from '../shared/utils';

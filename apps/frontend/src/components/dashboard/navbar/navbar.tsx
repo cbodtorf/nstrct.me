@@ -34,7 +34,7 @@ export const DashboardNavbar = component$(() => {
           </>
         )}
         <Link href="/dashboard" class="btn btn-ghost normal-case text-xl">
-          Reduced.to
+          Nstrct.me
         </Link>
       </div>
       <div
@@ -62,12 +62,12 @@ export const DashboardNavbar = component$(() => {
             </li>
             <li class="pr-2 border-black"></li>
             <li>
-              <a href="https://reduced.to/git" target="_blank" title="GitHub" class="btn-ghost">
+              <a href="https://nstrct.me/git" target="_blank" title="GitHub" class="btn-ghost">
                 Github
               </a>
             </li>
             <li>
-              <a href="https://docs.reduced.to" target="_blank" title="Documentation" class="btn-ghost">
+              <a href="https://docs.nstrct.me" target="_blank" title="Documentation" class="btn-ghost">
                 Docs
               </a>
             </li>

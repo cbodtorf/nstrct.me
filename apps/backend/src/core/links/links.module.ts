@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { AuthModule } from '../../auth/auth.module';
-import { PrismaModule } from '@reduced.to/prisma';
+import { PrismaModule } from '@nstrct.me/prisma';
 import { LinksController } from './links.controller';
 import { LinksService } from './links.service';
 

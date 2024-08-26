@@ -448,15 +448,15 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Reduced.to | Dashboard - Settings',
+  title: 'Nstrct.me | Dashboard - Settings',
   meta: [
     {
       name: 'title',
-      content: 'Reduced.to | Dashboard - My Settings',
+      content: 'Nstrct.me | Dashboard - My Settings',
     },
     {
       name: 'description',
-      content: 'Reduced.to | Your settings page. update your profile, and more!',
+      content: 'Nstrct.me | Your settings page. update your profile, and more!',
     },
     {
       property: 'og:type',
@@ -464,15 +464,15 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:url',
-      content: 'https://reduced.to/dashboard/settings',
+      content: 'https://nstrct.me/dashboard/settings',
     },
     {
       property: 'og:title',
-      content: 'Reduced.to | Dashboard - My Settings',
+      content: 'Nstrct.me | Dashboard - My Settings',
     },
     {
       property: 'og:description',
-      content: 'Reduced.to | Your settings page. update your profile, and more!',
+      content: 'Nstrct.me | Your settings page. update your profile, and more!',
     },
     {
       property: 'twitter:card',
@@ -480,11 +480,11 @@ export const head: DocumentHead = {
     },
     {
       property: 'twitter:title',
-      content: 'Reduced.to | Dashboard - My Settings',
+      content: 'Nstrct.me | Dashboard - My Settings',
     },
     {
       property: 'twitter:description',
-      content: 'Reduced.to | Your settings page. update your profile, and more!',
+      content: 'Nstrct.me | Your settings page. update your profile, and more!',
     },
   ],
 };

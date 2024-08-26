@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { VisitsConsumer } from './visits.consumer';
-import { QueueManagerModule, QueueManagerService } from '@reduced.to/queue-manager';
-import { PrismaModule } from '@reduced.to/prisma';
+import { QueueManagerModule, QueueManagerService } from '@nstrct.me/queue-manager';
+import { PrismaModule } from '@nstrct.me/prisma';
 import { VisitsService } from './visits.service';
-import { UsageModule } from '@reduced.to/subscription-manager';
+import { UsageModule } from '@nstrct.me/subscription-manager';
 
 @Module({
   imports: [PrismaModule, QueueManagerModule, UsageModule],

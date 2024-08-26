@@ -1,5 +1,5 @@
 import { globalAction$ } from '@builder.io/qwik-city';
-import { sleep } from '@reduced.to/utils';
+import { sleep } from '@nstrct.me/utils';
 import { REFRESH_COOKIE_NAME, refreshTokens, setTokensAsCookies } from '../../../../shared/auth.service';
 
 export const useRevalidatePlan = globalAction$(async (_, { fail, cookie }) => {

@@ -1,7 +1,7 @@
 import { UserContext } from '../../auth/interfaces/user-context';
 import { createParamDecorator, ExecutionContext, UnauthorizedException } from '@nestjs/common';
-import { Role } from '@reduced.to/prisma';
-import { FEATURES, PLAN_LEVELS } from '@reduced.to/subscription-manager';
+import { Role } from '@nstrct.me/prisma';
+import { FEATURES, PLAN_LEVELS } from '@nstrct.me/subscription-manager';
 
 export const GuardFields = createParamDecorator((_, ctx: ExecutionContext) => {
   const request = ctx.switchToHttp().getRequest();

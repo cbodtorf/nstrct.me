@@ -123,7 +123,7 @@ export const Features = component$(() => {
             {state.theme === DARK_THEME ? (
               <div class="mockup-browser border border-base-300 hidden mb-4 w-full lg:mb-0 lg:block bg-slate-900">
                 <div class="mockup-browser-toolbar">
-                  <div class="input border border-base-300">https://reduced.to/dashboard</div>
+                  <div class="input border border-base-300">https://nstrct.me/dashboard</div>
                 </div>
                 <img
                   class="w-full lg:mb-0 lg:flex rounded-lg"
@@ -136,7 +136,7 @@ export const Features = component$(() => {
             ) : (
               <div class="mockup-browser border border-base-300 hidden mb-4 w-full lg:mb-0 lg:block bg-slate-100">
                 <div class="mockup-browser-toolbar">
-                  <div class="input border border-base-300">https://reduced.to/dashboard</div>
+                  <div class="input border border-base-300">https://nstrct.me/dashboard</div>
                 </div>
                 <img
                   class="hidden mb-4 w-full lg:mb-0 lg:flex rounded-lg"
@@ -152,7 +152,7 @@ export const Features = component$(() => {
             {state.theme === DARK_THEME ? (
               <div class="mockup-browser border border-base-300 hidden mb-4 w-full lg:mb-0 lg:block bg-slate-900">
                 <div class="mockup-browser-toolbar">
-                  <div class="input border border-base-300">https://reduced.to</div>
+                  <div class="input border border-base-300">https://nstrct.me</div>
                 </div>
                 <img
                   class="hidden mb-4 w-full lg:mb-0 lg:flex rounded-lg"
@@ -165,7 +165,7 @@ export const Features = component$(() => {
             ) : (
               <div class="mockup-browser border border-base-300 hidden mb-4 w-full lg:mb-0 lg:block bg-slate-100">
                 <div class="mockup-browser-toolbar">
-                  <div class="input border border-base-300">https://reduced.to</div>
+                  <div class="input border border-base-300">https://nstrct.me</div>
                 </div>
                 <img
                   class="hidden mb-4 w-full lg:mb-0 lg:flex rounded-lg"

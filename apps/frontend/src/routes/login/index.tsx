@@ -150,15 +150,15 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Reduced.to | Login',
+  title: 'Nstrct.me | Login',
   meta: [
     {
       name: 'title',
-      content: 'Reduced.to | Login',
+      content: 'Nstrct.me | Login',
     },
     {
       name: 'description',
-      content: 'Login to your Reduced.to account to manage your shortened links.',
+      content: 'Login to your Nstrct.me account to manage your shortened links.',
     },
     {
       property: 'og:type',
@@ -166,15 +166,15 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:url',
-      content: 'https://reduced.to/login',
+      content: 'https://nstrct.me/login',
     },
     {
       property: 'og:title',
-      content: 'Reduced.to | Login',
+      content: 'Nstrct.me | Login',
     },
     {
       property: 'og:description',
-      content: 'Login to your Reduced.to account to manage your shortened links.',
+      content: 'Login to your Nstrct.me account to manage your shortened links.',
     },
     {
       property: 'twitter:card',
@@ -182,11 +182,11 @@ export const head: DocumentHead = {
     },
     {
       property: 'twitter:title',
-      content: 'Reduced.to | Login',
+      content: 'Nstrct.me | Login',
     },
     {
       property: 'twitter:description',
-      content: 'Login to your Reduced.to account to manage your shortened links.',
+      content: 'Login to your Nstrct.me account to manage your shortened links.',
     },
   ],
 };

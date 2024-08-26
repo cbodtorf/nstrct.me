@@ -2,9 +2,9 @@ import request from 'supertest';
 import { Test, TestingModule } from '@nestjs/testing';
 import { ReportsController } from './reports.controller';
 import { ReportsService } from './reports.service';
-import { PrismaService, Report } from '@reduced.to/prisma';
+import { PrismaService, Report } from '@nstrct.me/prisma';
 import { IPaginationResult } from '../../shared/utils';
-import { AppConfigModule } from '@reduced.to/config';
+import { AppConfigModule } from '@nstrct.me/config';
 import { RolesGuard } from '../../auth/guards/roles.guard';
 import { INestApplication, ValidationPipe } from '@nestjs/common';
 import { IFindAllOptions } from '../entity.service';
@@ -123,11 +123,11 @@ describe('ReportsController', () => {
       const findAllOptions: IFindAllOptions = {
         skip: 10,
         limit: 10,
-        filter: 'reduced.to',
+        filter: 'nstrct.me',
         sort: undefined,
       };
 
-      await request(app.getHttpServer()).get('/reports?limit=10&page=2&filter=reduced.to').expect(200);
+      await request(app.getHttpServer()).get('/reports?limit=10&page=2&filter=nstrct.me').expect(200);
 
       expect(reportsService.findAll).toHaveBeenCalledWith(findAllOptions);
     });
@@ -165,7 +165,7 @@ describe('ReportsController', () => {
 
   describe('POST /reports', () => {
     beforeEach(async () => {
-      jest.spyOn(reportsService['config'], 'getConfig').mockReturnValue({ front: { domain: 'reduced.to' } } as any);
+      jest.spyOn(reportsService['config'], 'getConfig').mockReturnValue({ front: { domain: 'nstrct.me' } } as any);
     });
 
     afterEach(() => {
@@ -173,11 +173,11 @@ describe('ReportsController', () => {
     });
 
     it('should return 201 if report is created successfully', async () => {
-      jest.spyOn(linksService, 'findBy').mockResolvedValue({ url: 'https://github.com/origranot/reduced.to' } as any);
+      jest.spyOn(linksService, 'findBy').mockResolvedValue({ url: 'https://github.com/cbodtorf/nstrct.me' } as any);
 
       const response = await request(app.getHttpServer())
         .post('/reports')
-        .send({ link: 'https://reduced.to/abcde', category: 'test' })
+        .send({ link: 'https://nstrct.me/abcde', category: 'test' })
         .expect(201);
 
       expect(response.body).toEqual({});
@@ -186,18 +186,18 @@ describe('ReportsController', () => {
     it('should return 404 if link is not found', async () => {
       jest.spyOn(linksService, 'findBy').mockResolvedValue(null);
 
-      await request(app.getHttpServer()).post('/reports').send({ link: 'https://reduced.to/abcde', category: 'test' }).expect(404);
+      await request(app.getHttpServer()).post('/reports').send({ link: 'https://nstrct.me/abcde', category: 'test' }).expect(404);
     });
 
     const TEST_CASES = [
-      ['http://reduced.to/123', true],
-      ['https://reduced.to/abcde', true],
-      ['https://reduced.to/orig', true],
+      ['http://nstrct.me/123', true],
+      ['https://nstrct.me/abcde', true],
+      ['https://nstrct.me/orig', true],
       ['https://google.com', false],
-      ['https://reduced.to', false],
-      ['https://reduced.to/abcde?test=1', false],
-      ['https://reduced.to/abcde/', false],
-      ['https://reduced.to/abcde/123', false],
+      ['https://nstrct.me', false],
+      ['https://nstrct.me/abcde?test=1', false],
+      ['https://nstrct.me/abcde/', false],
+      ['https://nstrct.me/abcde/123', false],
     ];
     it.each(TEST_CASES)('should return %p if link is %s shortened by us', async (link, result) => {
       jest.spyOn(linksService, 'findBy').mockResolvedValue({ url: 'https://google.com' } as any);
@@ -217,9 +217,9 @@ describe('ReportsController', () => {
     });
 
     it('should return 400 if category is not valid', async () => {
-      await request(app.getHttpServer()).post('/reports').send({ link: 'https://reduced.to/abcde', category: null }).expect(400);
-      await request(app.getHttpServer()).post('/reports').send({ link: 'https://reduced.to/abcde', category: 123 }).expect(400);
-      await request(app.getHttpServer()).post('/reports').send({ link: 'https://reduced.to/abcde', category: undefined }).expect(400);
+      await request(app.getHttpServer()).post('/reports').send({ link: 'https://nstrct.me/abcde', category: null }).expect(400);
+      await request(app.getHttpServer()).post('/reports').send({ link: 'https://nstrct.me/abcde', category: 123 }).expect(400);
+      await request(app.getHttpServer()).post('/reports').send({ link: 'https://nstrct.me/abcde', category: undefined }).expect(400);
     });
   });
 

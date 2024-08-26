@@ -1,7 +1,7 @@
 import { Module, forwardRef } from '@nestjs/common';
 import { UsersController } from './users.controller';
 import { UsersService } from './users.service';
-import { PrismaModule } from '@reduced.to/prisma';
+import { PrismaModule } from '@nstrct.me/prisma';
 import { AuthModule } from '../../auth/auth.module';
 import { StorageModule } from '../../storage/storage.module';
 import { StorageService } from '../../storage/storage.service';

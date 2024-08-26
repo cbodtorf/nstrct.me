@@ -17,7 +17,7 @@ export const Resources = component$(() => {
       </label>
       <ul tabIndex={0} class="p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-48">
         <li>
-          <a href="https://docs.reduced.to" target="_blank">
+          <a href="https://docs.nstrct.me" target="_blank">
             Docs
           </a>
         </li>
@@ -30,7 +30,7 @@ export const Resources = component$(() => {
           </Link>
         </li>
         <li>
-          <a href="https://github.com/origranot/reduced.to" target="_blank" title="GitHub" class="btn-ghost">
+          <a href="https://github.com/cbodtorf/nstrct.me" target="_blank" title="GitHub" class="btn-ghost">
             Github
           </a>
         </li>

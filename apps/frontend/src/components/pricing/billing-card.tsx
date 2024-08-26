@@ -1,6 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import { LuCheck } from '@qwikest/icons/lucide';
-import { PLAN_LEVELS, FEATURES, Plan } from '@reduced.to/subscription-manager';
+import { PLAN_LEVELS, FEATURES, Plan } from '@nstrct.me/subscription-manager';
 
 interface BillingCardProps {
   isPrefferedPlan: boolean;

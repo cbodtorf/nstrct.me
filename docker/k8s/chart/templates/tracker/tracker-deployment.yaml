@@ -24,7 +24,7 @@ spec:
           imagePullPolicy: Always
           envFrom:
             - configMapRef:
-                name: reduced-configmap
+                name: nstrct-configmap
           ports:
             - containerPort: {{ required "Tracker port has to be defined" .Values.tracker.port }}
           {{- if .Values.tracker.resources }}
